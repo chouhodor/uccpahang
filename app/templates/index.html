@@ -33,16 +33,16 @@
           <tr>
             <td>ICU</td>
             <td>4 to 5</td>
-            <td>{{ sheets.acell('D3').value }}</td>
-            <td>{{ sheets.acell('E3').value }}</td>
-            <td>{{ sheets.acell('F3').value }}%</td>
+            <td>{{ dict_sheet[1].get('Occupied') }}</td>
+            <td>{{ dict_sheet[1].get('Capacity') }}</td>
+            <td>{{ dict_sheet[1].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td>Medical</td>
             <td>1 to 4</td>
-            <td>{{ sheets.acell('D4').value }}</td>
-            <td>{{ sheets.acell('E4').value }}</td>
-            <td>{{ sheets.acell('F4').value }}%</td>
+            <td>{{ dict_sheet[2].get('Occupied') }}</td>
+            <td>{{ dict_sheet[2].get('Capacity') }}</td>
+            <td>{{ dict_sheet[2].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td></td>
@@ -54,9 +54,9 @@
           <tr>
             <td>HOSHAS</td>
             <td>1 to 4</td>
-            <td>{{ sheets.acell('D6').value }}</td>
-            <td>{{ sheets.acell('E6').value }}</td>
-            <td>{{ sheets.acell('F6').value }}%</td>
+            <td>{{ dict_sheet[4].get('Occupied') }}</td>
+            <td>{{ dict_sheet[4].get('Capacity') }}</td>
+            <td>{{ dict_sheet[4].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td></td>
@@ -68,9 +68,9 @@
           <tr>
             <td>H Lipis</td>
             <td>1 to 4</td>
-            <td>{{ sheets.acell('D8').value }}</td>
-            <td>{{ sheets.acell('E8').value }}</td>
-            <td>{{ sheets.acell('F8').value }}%</td>
+            <td>{{ dict_sheet[6].get('Occupied') }}</td>
+            <td>{{ dict_sheet[6].get('Capacity') }}</td>
+            <td>{{ dict_sheet[6].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td></td>
@@ -82,9 +82,9 @@
           <tr>
             <td>H Bentong</td>
             <td>1 to 2</td>
-            <td>{{ sheets.acell('D10').value }}</td>
-            <td>{{ sheets.acell('E10').value }}</td>
-            <td>{{ sheets.acell('F10').value }}%</td>
+            <td>{{ dict_sheet[8].get('Occupied') }}</td>
+            <td>{{ dict_sheet[8].get('Capacity') }}</td>
+            <td>{{ dict_sheet[8].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td></td>
@@ -96,9 +96,9 @@
           <tr>
             <td>H Pekan</td>
             <td>1 to 2</td>
-            <td>{{ sheets.acell('D12').value }}</td>
-            <td>{{ sheets.acell('E12').value }}</td>
-            <td>{{ sheets.acell('F12').value }}%</td>
+            <td>{{ dict_sheet[10].get('Occupied') }}</td>
+            <td>{{ dict_sheet[10].get('Capacity') }}</td>
+            <td>{{ dict_sheet[10].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td></td>
@@ -110,9 +110,9 @@
           <tr>
             <td>H Raub</td>
             <td>1 to 2</td>
-            <td>{{ sheets.acell('D14').value }}</td>
-            <td>{{ sheets.acell('E14').value }}</td>
-            <td>{{ sheets.acell('F14').value }}%</td>
+            <td>{{ dict_sheet[12].get('Occupied') }}</td>
+            <td>{{ dict_sheet[12].get('Capacity') }}</td>
+            <td>{{ dict_sheet[12].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td></td>
@@ -124,9 +124,9 @@
           <tr>
             <td>H Jengka</td>
             <td>1 to 2</td>
-            <td>{{ sheets.acell('D16').value }}</td>
-            <td>{{ sheets.acell('E16').value }}</td>
-            <td>{{ sheets.acell('F16').value }}%</td>
+            <td>{{ dict_sheet[14].get('Occupied') }}</td>
+            <td>{{ dict_sheet[14].get('Capacity') }}</td>
+            <td>{{ dict_sheet[14].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td></td>
@@ -138,9 +138,9 @@
           <tr>
             <td>H Muadzam</td>
             <td>1 to 2</td>
-            <td>{{ sheets.acell('D18').value }}</td>
-            <td>{{ sheets.acell('E18').value }}</td>
-            <td>{{ sheets.acell('F18').value }}%</td>
+            <td>{{ dict_sheet[16].get('Occupied') }}</td>
+            <td>{{ dict_sheet[16].get('Capacity') }}</td>
+            <td>{{ dict_sheet[16].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td></td>
@@ -159,16 +159,16 @@
           <tr>
             <td>ICU</td>
             <td>4 to 5</td>
-            <td>{{ sheets.acell('D21').value }}</td>
-            <td>{{ sheets.acell('E21').value }}</td>
-            <td>{{ sheets.acell('F21').value }}%</td>
+            <td>{{ dict_sheet[19].get('Occupied') }}</td>
+            <td>{{ dict_sheet[19].get('Capacity') }}</td>
+            <td>{{ dict_sheet[19].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td>Ward</td>
             <td>1 to 3</td>
-            <td>{{ sheets.acell('D22').value }}</td>
-            <td>{{ sheets.acell('E22').value }}</td>
-            <td>{{ sheets.acell('F22').value }}%</td>
+            <td>{{ dict_sheet[20].get('Occupied') }}</td>
+            <td>{{ dict_sheet[20].get('Capacity') }}</td>
+            <td>{{ dict_sheet[20].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td></td>
@@ -180,9 +180,9 @@
           <tr>
             <td>SUKPA</td>
             <td>1 to 2</td>
-            <td>{{ sheets.acell('D24').value }}</td>
-            <td>{{ sheets.acell('E24').value }}</td>
-            <td>{{ sheets.acell('F24').value }}%</td>
+            <td>{{ dict_sheet[22].get('Occupied') }}</td>
+            <td>{{ dict_sheet[22].get('Capacity') }}</td>
+            <td>{{ dict_sheet[22].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td></td>
@@ -194,9 +194,9 @@
           <tr>
             <td>ILKKM</td>
             <td>1 to 2</td>
-            <td>{{ sheets.acell('D26').value }}</td>
-            <td>{{ sheets.acell('E26').value }}</td>
-            <td>{{ sheets.acell('F26').value }}%</td>
+            <td>{{ dict_sheet[24].get('Occupied') }}</td>
+            <td>{{ dict_sheet[24].get('Capacity') }}</td>
+            <td>{{ dict_sheet[24].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td></td>
@@ -208,9 +208,9 @@
           <tr>
             <td>PKRC Penjara Bentong</td>
             <td>1 to 2</td>
-            <td>{{ sheets.acell('D28').value }}</td>
-            <td>{{ sheets.acell('E28').value }}</td>
-            <td>{{ sheets.acell('F28').value }}%</td>
+            <td>{{ dict_sheet[26].get('Occupied') }}</td>
+            <td>{{ dict_sheet[26].get('Capacity') }}</td>
+            <td>{{ dict_sheet[26].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td></td>
@@ -229,16 +229,16 @@
           <tr>
             <td>COVID ICU bed</td>
             <td></td>
-            <td>{{ sheets.acell('D31').value }}</td>
-            <td>{{ sheets.acell('E31').value }}</td>
-            <td>{{ sheets.acell('F31').value }}%</td>
+            <td>{{ dict_sheet[29].get('Occupied') }}</td>
+            <td>{{ dict_sheet[29].get('Capacity') }}</td>
+            <td>{{ dict_sheet[29].get('Bed occupancy rate') }}%</td>
           </tr>
           <tr>
             <td>COVID normal bed</td>
             <td></td>
-            <td>{{ sheets.acell('D32').value }}</td>
-            <td>{{ sheets.acell('E32').value }}</td>
-            <td>{{ sheets.acell('F32').value }}%</td>
+            <td>{{ dict_sheet[30].get('Occupied') }}</td>
+            <td>{{ dict_sheet[30].get('Capacity') }}</td>
+            <td>{{ dict_sheet[30].get('Bed occupancy rate') }}%</td>
           </tr>
         </tbody>
         
