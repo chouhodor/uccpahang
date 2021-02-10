@@ -24,6 +24,20 @@
         </thead>
         <tbody>
           <tr>
+            <td><h3>Total COVID ICU bed</h3></td>
+            <td></td>
+            <td>{{ dict_sheet[29].get('Occupied') }}</td>
+            <td>{{ dict_sheet[29].get('Capacity') }}</td>
+            <td>{{ dict_sheet[29].get('Bed occupancy rate') }}%</td>
+          </tr>
+          <tr>
+            <td><h3>Total COVID normal bed</h3></td>
+            <td></td>
+            <td>{{ dict_sheet[30].get('Occupied') }}</td>
+            <td>{{ dict_sheet[30].get('Capacity') }}</td>
+            <td>{{ dict_sheet[30].get('Bed occupancy rate') }}%</td>
+          </tr>
+          <tr>
             <td>HTAA</td>
             <td></td>
             <td></td>
@@ -218,27 +232,6 @@
             <td></td>
             <td></td>
             <td></td>
-          </tr>
-          <tr>
-            <td><strong>Total</strong></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>COVID ICU bed</td>
-            <td></td>
-            <td>{{ dict_sheet[29].get('Occupied') }}</td>
-            <td>{{ dict_sheet[29].get('Capacity') }}</td>
-            <td>{{ dict_sheet[29].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td>COVID normal bed</td>
-            <td></td>
-            <td>{{ dict_sheet[30].get('Occupied') }}</td>
-            <td>{{ dict_sheet[30].get('Capacity') }}</td>
-            <td>{{ dict_sheet[30].get('Bed occupancy rate') }}%</td>
           </tr>
         </tbody>
         
