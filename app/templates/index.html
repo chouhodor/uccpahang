@@ -10,85 +10,241 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>UCC Pahang Hospital monitor</h1>
-
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>Available</th>
-                    <th>Capacity</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><strong>HTAA</strong></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>ICU beds (Cat 4-5)</td>
-                    <td>{{ sheets.acell('D5').value }}</td>
-                    <td>{{ sheets.acell('E5').value }}</td>
-                  </tr>
-                  <tr>
-                    <td>Medical beds (Cat 1-4)</td>
-                    <td>{{ sheets.acell('D11').value }}</td>
-                    <td>{{ sheets.acell('E11').value }}</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><strong>UIA</strong></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>ICU beds (Cat 4-5)</td>
-                    <td>{{ sheets.acell('D14').value }}</td>
-                    <td>{{ sheets.acell('E14').value }}</td>
-                  </tr>
-                  <tr>
-                    <td>Medical beds (Cat 1-4)</td>
-                    <td>{{ sheets.acell('D15').value }}</td>
-                    <td>{{ sheets.acell('E15').value }}</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><strong>SUKPA (Cat 1-2)</strong></td>
-                    <td>{{ sheets.acell('D17').value }}</td>
-                    <td>{{ sheets.acell('E17').value }}</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><strong>ILKKM</strong></td>
-                    <td>{{ sheets.acell('D19').value }}</td>
-                    <td>{{ sheets.acell('E19').value }}</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-            </table>
-
-
-
+      <h2>UCC Pahang Hospital monitor </h2>
+      <h2>{{ x }}</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Cat</th>
+            <th>Occupied</th>
+            <th>Capacity</th>
+            <th>Bed occupancy rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTAA</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ICU</td>
+            <td>4 to 5</td>
+            <td>{{ sheets.acell('D3').value }}</td>
+            <td>{{ sheets.acell('E3').value }}</td>
+            <td>{{ sheets.acell('F3').value }}%</td>
+          </tr>
+          <tr>
+            <td>Medical</td>
+            <td>1 to 4</td>
+            <td>{{ sheets.acell('D4').value }}</td>
+            <td>{{ sheets.acell('E4').value }}</td>
+            <td>{{ sheets.acell('F4').value }}%</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>HOSHAS</td>
+            <td>1 to 4</td>
+            <td>{{ sheets.acell('D6').value }}</td>
+            <td>{{ sheets.acell('E6').value }}</td>
+            <td>{{ sheets.acell('F6').value }}%</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>H Lipis</td>
+            <td>1 to 4</td>
+            <td>{{ sheets.acell('D8').value }}</td>
+            <td>{{ sheets.acell('E8').value }}</td>
+            <td>{{ sheets.acell('F8').value }}%</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>H Bentong</td>
+            <td>1 to 2</td>
+            <td>{{ sheets.acell('D10').value }}</td>
+            <td>{{ sheets.acell('E10').value }}</td>
+            <td>{{ sheets.acell('F10').value }}%</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>H Pekan</td>
+            <td>1 to 2</td>
+            <td>{{ sheets.acell('D12').value }}</td>
+            <td>{{ sheets.acell('E12').value }}</td>
+            <td>{{ sheets.acell('F12').value }}%</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>H Raub</td>
+            <td>1 to 2</td>
+            <td>{{ sheets.acell('D14').value }}</td>
+            <td>{{ sheets.acell('E14').value }}</td>
+            <td>{{ sheets.acell('F14').value }}%</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>H Jengka</td>
+            <td>1 to 2</td>
+            <td>{{ sheets.acell('D16').value }}</td>
+            <td>{{ sheets.acell('E16').value }}</td>
+            <td>{{ sheets.acell('F16').value }}%</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>H Muadzam</td>
+            <td>1 to 2</td>
+            <td>{{ sheets.acell('D18').value }}</td>
+            <td>{{ sheets.acell('E18').value }}</td>
+            <td>{{ sheets.acell('F18').value }}%</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>UIA</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ICU</td>
+            <td>4 to 5</td>
+            <td>{{ sheets.acell('D21').value }}</td>
+            <td>{{ sheets.acell('E21').value }}</td>
+            <td>{{ sheets.acell('F21').value }}%</td>
+          </tr>
+          <tr>
+            <td>Ward</td>
+            <td>1 to 3</td>
+            <td>{{ sheets.acell('D22').value }}</td>
+            <td>{{ sheets.acell('E22').value }}</td>
+            <td>{{ sheets.acell('F22').value }}%</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>SUKPA</td>
+            <td>1 to 2</td>
+            <td>{{ sheets.acell('D24').value }}</td>
+            <td>{{ sheets.acell('E24').value }}</td>
+            <td>{{ sheets.acell('F24').value }}%</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ILKKM</td>
+            <td>1 to 2</td>
+            <td>{{ sheets.acell('D26').value }}</td>
+            <td>{{ sheets.acell('E26').value }}</td>
+            <td>{{ sheets.acell('F26').value }}%</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>PKRC Penjara Bentong</td>
+            <td>1 to 2</td>
+            <td>{{ sheets.acell('D28').value }}</td>
+            <td>{{ sheets.acell('E28').value }}</td>
+            <td>{{ sheets.acell('F28').value }}%</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>COVID ICU bed</td>
+            <td></td>
+            <td>{{ sheets.acell('D31').value }}</td>
+            <td>{{ sheets.acell('E31').value }}</td>
+            <td>{{ sheets.acell('F31').value }}%</td>
+          </tr>
+          <tr>
+            <td>COVID normal bed</td>
+            <td></td>
+            <td>{{ sheets.acell('D32').value }}</td>
+            <td>{{ sheets.acell('E32').value }}</td>
+            <td>{{ sheets.acell('F32').value }}%</td>
+          </tr>
+        </tbody>
+        
         </div>
 
-        <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     </body>
