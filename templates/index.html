@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>UCC Pahang Hospital</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+
+	</head>
+	<body>
+		<div class="container">
+			<h1>UCC Pahang Hospital monitor</h1>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Available</th>
+                    <th>Capacity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>HTAA</strong></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>ICU beds (Cat 4-5)</td>
+                    <td>{{ sheets.acell('D5').value }}</td>
+                    <td>{{ sheets.acell('E5').value }}</td>
+                  </tr>
+                  <tr>
+                    <td>Medical beds (Cat 1-4)</td>
+                    <td>{{ sheets.acell('D11').value }}</td>
+                    <td>{{ sheets.acell('E11').value }}</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><strong>UIA</strong></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>ICU beds (Cat 4-5)</td>
+                    <td>{{ sheets.acell('D14').value }}</td>
+                    <td>{{ sheets.acell('E14').value }}</td>
+                  </tr>
+                  <tr>
+                    <td>Medical beds (Cat 1-4)</td>
+                    <td>{{ sheets.acell('D15').value }}</td>
+                    <td>{{ sheets.acell('E15').value }}</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><strong>SUKPA (Cat 1-2)</strong></td>
+                    <td>{{ sheets.acell('D17').value }}</td>
+                    <td>{{ sheets.acell('E17').value }}</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><strong>ILKKM</strong></td>
+                    <td>{{ sheets.acell('D19').value }}</td>
+                    <td>{{ sheets.acell('E19').value }}</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
