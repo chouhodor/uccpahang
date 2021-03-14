@@ -1,251 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>UCC Pahang Hospital</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
-
+		<title>UCC Bed Monitor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
-      <h2>UCC Pahang Hospital Monitor</h2>
-      <h2>{{ x }}</h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Cat</th>
-            <th>Occupied</th>
-            <th>Capacity</th>
-            <th>Bed occupancy rate</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><h5>Total COVID ICU bed</h5></td>
-            <td></td>
-            <td>{{ dict_sheet[29].get('Occupied') }}</td>
-            <td>{{ dict_sheet[29].get('Capacity') }}</td>
-            <td>{{ dict_sheet[29].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td><h5>Total COVID normal bed</h5></td>
-            <td></td>
-            <td>{{ dict_sheet[30].get('Occupied') }}</td>
-            <td>{{ dict_sheet[30].get('Capacity') }}</td>
-            <td>{{ dict_sheet[30].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>HTAA</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ICU</td>
-            <td>4 to 5</td>
-            <td>{{ dict_sheet[1].get('Occupied') }}</td>
-            <td>{{ dict_sheet[1].get('Capacity') }}</td>
-            <td>{{ dict_sheet[1].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td>Medical</td>
-            <td>1 to 4</td>
-            <td>{{ dict_sheet[2].get('Occupied') }}</td>
-            <td>{{ dict_sheet[2].get('Capacity') }}</td>
-            <td>{{ dict_sheet[2].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>HOSHAS</td>
-            <td>1 to 4</td>
-            <td>{{ dict_sheet[4].get('Occupied') }}</td>
-            <td>{{ dict_sheet[4].get('Capacity') }}</td>
-            <td>{{ dict_sheet[4].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>H Lipis</td>
-            <td>1 to 4</td>
-            <td>{{ dict_sheet[6].get('Occupied') }}</td>
-            <td>{{ dict_sheet[6].get('Capacity') }}</td>
-            <td>{{ dict_sheet[6].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>H Bentong</td>
-            <td>1 to 2</td>
-            <td>{{ dict_sheet[8].get('Occupied') }}</td>
-            <td>{{ dict_sheet[8].get('Capacity') }}</td>
-            <td>{{ dict_sheet[8].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>H Pekan</td>
-            <td>1 to 2</td>
-            <td>{{ dict_sheet[10].get('Occupied') }}</td>
-            <td>{{ dict_sheet[10].get('Capacity') }}</td>
-            <td>{{ dict_sheet[10].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>H Raub</td>
-            <td>1 to 2</td>
-            <td>{{ dict_sheet[12].get('Occupied') }}</td>
-            <td>{{ dict_sheet[12].get('Capacity') }}</td>
-            <td>{{ dict_sheet[12].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>H Jengka</td>
-            <td>1 to 2</td>
-            <td>{{ dict_sheet[14].get('Occupied') }}</td>
-            <td>{{ dict_sheet[14].get('Capacity') }}</td>
-            <td>{{ dict_sheet[14].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>H Muadzam</td>
-            <td>1 to 2</td>
-            <td>{{ dict_sheet[16].get('Occupied') }}</td>
-            <td>{{ dict_sheet[16].get('Capacity') }}</td>
-            <td>{{ dict_sheet[16].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>UIA</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ICU</td>
-            <td>4 to 5</td>
-            <td>{{ dict_sheet[19].get('Occupied') }}</td>
-            <td>{{ dict_sheet[19].get('Capacity') }}</td>
-            <td>{{ dict_sheet[19].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td>Ward</td>
-            <td>1 to 3</td>
-            <td>{{ dict_sheet[20].get('Occupied') }}</td>
-            <td>{{ dict_sheet[20].get('Capacity') }}</td>
-            <td>{{ dict_sheet[20].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>SUKPA</td>
-            <td>1 to 2</td>
-            <td>{{ dict_sheet[22].get('Occupied') }}</td>
-            <td>{{ dict_sheet[22].get('Capacity') }}</td>
-            <td>{{ dict_sheet[22].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ILKKM</td>
-            <td>1 to 2</td>
-            <td>{{ dict_sheet[24].get('Occupied') }}</td>
-            <td>{{ dict_sheet[24].get('Capacity') }}</td>
-            <td>{{ dict_sheet[24].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>PKRC Penjara Bentong</td>
-            <td>1 to 2</td>
-            <td>{{ dict_sheet[26].get('Occupied') }}</td>
-            <td>{{ dict_sheet[26].get('Capacity') }}</td>
-            <td>{{ dict_sheet[26].get('Bed occupancy rate') }}%</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-        
+      <h2>UCC Pahang Bed Monitor</h2>
+      <h2>{{ update }}</h2>
+
+      <h3>Pahang Hospital COVID-19 BOR {{ dict_sheet[21].get('BOR') }}%</h3>
+      
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Government</a></li>
+        <li><a data-toggle="tab" href="#menu1">Private</a></li>
+        <li><a data-toggle="tab" href="#menu2">PKRC</a></li>
+      </ul>
+    
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <h3>Government Hospital</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Cat</th>
+                <th>Availability</th>
+                <th>BOR</th>
+                <th>Last updated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>HTAA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>ICU</td>
+                <td>4 to 5</td>
+                <td>{{ dict_sheet[0].get('Availability') }}</td>
+                <td>{{ dict_sheet[0].get('BOR') }}%</td>
+                <td>{{ dict_sheet[0].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>General</td>
+                <td>1 to 4</td>
+                <td>{{ dict_sheet[1].get('Availability') }}</td>
+                <td>{{ dict_sheet[1].get('BOR') }}%</td>
+                <td>{{ dict_sheet[1].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>UIA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>ICU</td>
+                <td>4 to 5</td>
+                <td>{{ dict_sheet[2].get('Availability') }}</td>
+                <td>{{ dict_sheet[2].get('BOR') }}%</td>
+                <td>{{ dict_sheet[2].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>General</td>
+                <td>1 to 3</td>
+                <td>{{ dict_sheet[3].get('Availability') }}</td>
+                <td>{{ dict_sheet[3].get('BOR') }}%</td>
+                <td>{{ dict_sheet[3].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>H HOSHAS</td>
+                <td>1 to 2</td>
+                <td>{{ dict_sheet[4].get('Availability') }}</td>
+                <td>{{ dict_sheet[4].get('BOR') }}%</td>
+                <td>{{ dict_sheet[4].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>H Pekan</td>
+                <td>1 to 2</td>
+                <td>{{ dict_sheet[5].get('Availability') }}</td>
+                <td>{{ dict_sheet[5].get('BOR') }}%</td>
+                <td>{{ dict_sheet[5].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>H Muadzam Shah</td>
+                <td>1 to 3</td>
+                <td>{{ dict_sheet[6].get('Availability') }}</td>
+                <td>{{ dict_sheet[6].get('BOR') }}%</td>
+                <td>{{ dict_sheet[6].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>H Jengka</td>
+                <td>1 to 3</td>
+                <td>{{ dict_sheet[8].get('Availability') }}</td>
+                <td>{{ dict_sheet[8].get('BOR') }}%</td>
+                <td>{{ dict_sheet[8].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>H Kuala Lipis</td>
+                <td>1 to 2</td>
+                <td>{{ dict_sheet[10].get('Availability') }}</td>
+                <td>{{ dict_sheet[10].get('BOR') }}%</td>
+                <td>{{ dict_sheet[10].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>H Bentong</td>
+                <td>1 to 2</td>
+                <td>{{ dict_sheet[11].get('Availability') }}</td>
+                <td>{{ dict_sheet[11].get('BOR') }}%</td>
+                <td>{{ dict_sheet[11].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>H Raub</td>
+                <td>1 to 2</td>
+                <td>{{ dict_sheet[12].get('Availability') }}</td>
+                <td>{{ dict_sheet[12].get('BOR') }}%</td>
+                <td>{{ dict_sheet[12].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+            </table>
         </div>
-
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        <div id="menu1" class="tab-pane fade">
+          <h3>Private Hospital</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Cat</th>
+                <th>Availability</th>
+                <th>BOR</th>
+                <th>Last updated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Pahang Medical Center</td>
+                <td>1 to 2</td>
+                <td>{{ dict_sheet[14].get('Availability') }}</td>
+                <td>{{ dict_sheet[14].get('BOR') }}%</td>
+                <td>{{ dict_sheet[14].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>Kuantan Medical Center</td>
+                <td>1 to 2</td>
+                <td>{{ dict_sheet[15].get('Availability') }}</td>
+                <td>{{ dict_sheet[15].get('BOR') }}%</td>
+                <td>{{ dict_sheet[15].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>KPJ Pahang Specialist</td>
+                <td>1 to 2</td>
+                <td>{{ dict_sheet[16].get('Availability') }}</td>
+                <td>{{ dict_sheet[16].get('BOR') }}%</td>
+                <td>{{ dict_sheet[16].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>Darul Makmur Medical</td>
+                <td>1 to 2</td>
+                <td>{{ dict_sheet[17].get('Availability') }}</td>
+                <td>{{ dict_sheet[17].get('BOR') }}%</td>
+                <td>{{ dict_sheet[17].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+            </table>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          <h3>PKRC</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Cat</th>
+                <th>Availability</th>
+                <th>BOR</th>
+                <th>Last updated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>SUKPA</td>
+                <td>1 to 2</td>
+                <td>{{ dict_sheet[18].get('Availability') }}</td>
+                <td>{{ dict_sheet[18].get('BOR') }}%</td>
+                <td>{{ dict_sheet[18].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>ILKKM Kuantan</td>
+                <td>1 to 2</td>
+                <td>{{ dict_sheet[19].get('Availability') }}</td>
+                <td>{{ dict_sheet[19].get('BOR') }}%</td>
+                <td>{{ dict_sheet[19].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>Penjara Bentong</td>
+                <td>1 to 2</td>
+                <td>{{ dict_sheet[20].get('Availability') }}</td>
+                <td>{{ dict_sheet[20].get('BOR') }}%</td>
+                <td>{{ dict_sheet[20].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+            </table>
+        </div>
+      </div>
+      </div>
     </body>
 </html>
+
