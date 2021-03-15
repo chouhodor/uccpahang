@@ -64,24 +64,6 @@
                 <td></td>
               </tr>
               <tr>
-                <td>UIA</td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>ICU</td>
-                <td>{{ dict_sheet[2].get('Availability') }}</td>
-                <td>{{ dict_sheet[2].get('BOR') }}%</td>
-                <td>{{ dict_sheet[2].get('Last updated') }}</td>
-              </tr>
-              <tr>
-                <td>General</td>
-                <td>{{ dict_sheet[3].get('Availability') }}</td>
-                <td>{{ dict_sheet[3].get('BOR') }}%</td>
-                <td>{{ dict_sheet[3].get('Last updated') }}</td>
-              </tr>
-              <tr>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -150,11 +132,23 @@
               </tr>
             </thead>
             <tbody>
+		<tr>
+                <td>UIA</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
               <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>ICU</td>
+                <td>{{ dict_sheet[2].get('Availability') }}</td>
+                <td>{{ dict_sheet[2].get('BOR') }}%</td>
+                <td>{{ dict_sheet[2].get('Last updated') }}</td>
+              </tr>
+              <tr>
+                <td>General</td>
+                <td>{{ dict_sheet[3].get('Availability') }}</td>
+                <td>{{ dict_sheet[3].get('BOR') }}%</td>
+                <td>{{ dict_sheet[3].get('Last updated') }}</td>
               </tr>
               <tr>
                 <td>Pahang Medical Center</td>
