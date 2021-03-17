@@ -30,7 +30,7 @@
                 <th></th>
                 <th>Availability</th>
                 <th>BOR</th>
-                <th>Last updated (hours)</th>
+                <th>Last updated</th>
               </tr>
             </thead>
             <tbody>
@@ -44,13 +44,13 @@
                 <td>ICU</td>
                 <td>{{ dict_sheet[0].get('Availability') }}</td>
                 <td>{{ dict_sheet[0].get('BOR') }}%</td>
-                <td>{{ dict_sheet[0].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[0].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td>General</td>
                 <td>{{ dict_sheet[1].get('Availability') }}</td>
                 <td>{{ dict_sheet[1].get('BOR') }}%</td>
-                <td>{{ dict_sheet[1].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[1].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td></td>
@@ -62,37 +62,37 @@
                 <td>H HOSHAS</td>
                 <td>{{ dict_sheet[4].get('Availability') }}</td>
                 <td>{{ dict_sheet[4].get('BOR') }}%</td>
-                <td>{{ dict_sheet[4].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[4].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td>H Muadzam Shah</td>
                 <td>{{ dict_sheet[6].get('Availability') }}</td>
                 <td>{{ dict_sheet[6].get('BOR') }}%</td>
-                <td>{{ dict_sheet[6].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[6].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td>H Jengka</td>
                 <td>{{ dict_sheet[8].get('Availability') }}</td>
                 <td>{{ dict_sheet[8].get('BOR') }}%</td>
-                <td>{{ dict_sheet[8].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[8].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td>H Kuala Lipis</td>
                 <td>{{ dict_sheet[10].get('Availability') }}</td>
                 <td>{{ dict_sheet[10].get('BOR') }}%</td>
-                <td>{{ dict_sheet[10].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[10].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td>H Bentong</td>
                 <td>{{ dict_sheet[11].get('Availability') }}</td>
                 <td>{{ dict_sheet[11].get('BOR') }}%</td>
-                <td>{{ dict_sheet[11].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[11].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td>H Raub</td>
                 <td>{{ dict_sheet[12].get('Availability') }}</td>
                 <td>{{ dict_sheet[12].get('BOR') }}%</td>
-                <td>{{ dict_sheet[12].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[12].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td></td>
@@ -111,7 +111,7 @@
                 <th></th>
                 <th>Availability</th>
                 <th>BOR</th>
-                <th>Last updated(hours)</th>
+                <th>Last updated</th>
               </tr>
             </thead>
             <tbody>
@@ -125,13 +125,13 @@
                 <td>ICU</td>
                 <td>{{ dict_sheet[2].get('Availability') }}</td>
                 <td>{{ dict_sheet[2].get('BOR') }}%</td>
-                <td>{{ dict_sheet[2].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[2].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td>General</td>
                 <td>{{ dict_sheet[3].get('Availability') }}</td>
                 <td>{{ dict_sheet[3].get('BOR') }}%</td>
-                <td>{{ dict_sheet[3].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[3].get('Last updated')) }} hours ago</td>
               </tr>
 	      <tr>
                 <td></td>
@@ -142,26 +142,26 @@
                 <td>Pahang Medical Center</td>
                 <td>{{ dict_sheet[14].get('Availability') }}</td>
                 <td>{{ dict_sheet[14].get('BOR') }}%</td>
-                <td>{{ dict_sheet[14].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[14].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td>Kuantan Medical Center</td>
                 <td>{{ dict_sheet[15].get('Availability') }}</td>
                 <td>{{ dict_sheet[15].get('BOR') }}%</td>
-                <td>{{ dict_sheet[15].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[15].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td>KPJ Pahang Specialist</td>
 
                 <td>{{ dict_sheet[16].get('Availability') }}</td>
                 <td>{{ dict_sheet[16].get('BOR') }}%</td>
-                <td>{{ dict_sheet[16].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[16].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td>Darul Makmur Medical</td>
                 <td>{{ dict_sheet[17].get('Availability') }}</td>
                 <td>{{ dict_sheet[17].get('BOR') }}%</td>
-                <td>{{ dict_sheet[17].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[17].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td></td>
@@ -180,7 +180,7 @@
                 <th></th>
                 <th>Availability</th>
                 <th>BOR</th>
-                <th>Last updated(hours)</th>
+                <th>Last updated</th>
               </tr>
             </thead>
             <tbody>
@@ -194,20 +194,20 @@
                 <td>SUKPA</td>
                 <td>{{ dict_sheet[18].get('Availability') }}</td>
                 <td>{{ dict_sheet[18].get('BOR') }}%</td>
-                <td>{{ dict_sheet[18].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[18].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td>ILKKM Kuantan</td>
 
                 <td>{{ dict_sheet[19].get('Availability') }}</td>
                 <td>{{ dict_sheet[19].get('BOR') }}%</td>
-                <td>{{ dict_sheet[19].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[19].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td>Penjara Bentong</td>
                 <td>{{ dict_sheet[20].get('Availability') }}</td>
                 <td>{{ dict_sheet[20].get('BOR') }}%</td>
-                <td>{{ dict_sheet[20].get('Last updated') }}</td>
+                <td>{{ maxhours(dict_sheet[20].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
                 <td></td>

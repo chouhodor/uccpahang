@@ -10,7 +10,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 app = Flask(__name__)
 
-
+'''
 #live test
 scopes = ["https://spreadsheets.google.com/feeds","https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
 json_creds = os.getenv("GOOGLE_SHEETS_CREDS_JSON")
@@ -26,15 +26,24 @@ scope = ["https://spreadsheets.google.com/feeds","https://www.googleapis.com/aut
 creds = ServiceAccountCredentials.from_json_keyfile_name('ucc-pahang.json', scope)
 client = gspread.authorize(creds)
 ##local test
-'''
+
 
 spreadsheet = client.open_by_url("https://docs.google.com/spreadsheets/d/14vFutdJuHcszQKIpAcqyQ106AtBSebeghrRxTp9ittQ")
 sheet = spreadsheet.sheet1
 currentdate = datetime.datetime.now()
 
+def maxhour (h):
+    if h > 24:
+        return 24
+    else:
+         return h
+
+
 
 @app.route('/', methods=['GET'])
 def index():
+
+    maxhours=maxhour
     
     dict_sheet = sheet.get_all_records()
     currentdates = currentdate
@@ -42,7 +51,8 @@ def index():
 
     return render_template('index.html',  
     dict_sheet = dict_sheet,
-    update = update)
+    update = update,
+    maxhours=maxhours)
 
 if __name__ == '__main__':
     app.run(debug=True)
