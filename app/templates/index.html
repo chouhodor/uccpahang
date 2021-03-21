@@ -18,12 +18,11 @@
       <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">Government</a></li>
         <li><a data-toggle="tab" href="#menu1">Private</a></li>
-        <li><a data-toggle="tab" href="#menu2">PKRC</a></li>
       </ul>
     
       <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
-          <h3>Government Hospital</h3>
+          <h4>Government Hospital</h4>
           <table class="table">
             <thead>
               <tr>
@@ -35,28 +34,22 @@
             </thead>
             <tbody>
               <tr>
-                <td>HTAA</td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
-                <td>ICU</td>
+                <td>HTAA - ICU</td>
                 <td>{{ dict_sheet[0].get('Availability') }}</td>
                 <td>{{ dict_sheet[0].get('BOR') }}%</td>
                 <td>{{ maxhours(dict_sheet[0].get('Last updated')) }} hours ago</td>
               </tr>
               <tr>
-                <td>General</td>
+                <td>HTAA - General</td>
                 <td>{{ dict_sheet[1].get('Availability') }}</td>
                 <td>{{ dict_sheet[1].get('BOR') }}%</td>
                 <td>{{ maxhours(dict_sheet[1].get('Last updated')) }} hours ago</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
               </tr>
               <tr>
                 <td>H HOSHAS</td>
@@ -166,8 +159,8 @@
             </tbody>
             </table>
         </div>
-        <div id="menu2" class="tab-pane fade">
-          <h3>PKRC</h3>
+        <div>
+          <h4>PKRC</h4>
           <table class="table">
             <thead>
               <tr>
